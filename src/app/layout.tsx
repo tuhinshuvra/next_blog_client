@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+// The stylesheet is handled by Next.js at build time, even when TypeScript
+// cannot resolve the side-effect-only import in this environment.
+// @ts-expect-error -- Next.js resolves global CSS imports during bundling.
 import "./globals.css";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { Toaster } from "@/components/ui/sonner";

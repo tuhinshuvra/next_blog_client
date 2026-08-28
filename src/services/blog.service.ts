@@ -38,7 +38,7 @@ export const blogService = {
             const response = await fetch(url.toString(), config);
 
             const data = await response.json();
-            console.log("Post data: ", data);
+            // console.log("Post data: ", data);
 
             return { data: data, error: null };
 
